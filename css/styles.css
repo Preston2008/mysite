@@ -42,3 +42,21 @@ marquee {
     right: 25px;
     bottom: 15px;
 }
+
+#aboutme ul li {
+	list-style-type: disclosure-closed;
+}
+
+.aboutme#menu a:visited, .aboutme#menu a {
+	color: red;
+}
+
+.main-content#aboutme {
+	text-align: left;
+	margin-left: 200px;
+	padding-top: 50px;
+}
+
+#footer a:hover {
+	cursor: default;
+}
