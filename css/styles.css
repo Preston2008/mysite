@@ -4,6 +4,7 @@ html {
 
 body {
 	color: white;
+	margin: 0;
 }
 
 body h1, #menu, #footer, .main-content {
@@ -43,12 +44,16 @@ marquee {
     bottom: 15px;
 }
 
-#aboutme ul li {
+#aboutme ul li, #side-menu ul li {
 	list-style-type: disclosure-closed;
 }
 
 .aboutme#menu a:visited, .aboutme#menu a {
 	color: red;
+}
+
+.faq#menu a:visited, .faq#menu a, .faq#footer {
+	color: aqua;
 }
 
 .main-content#aboutme {
@@ -60,3 +65,21 @@ marquee {
 #footer a:hover {
 	cursor: default;
 }
+
+iframe {
+	width: 100%;
+	border-width: thick;
+	border-style: groove;
+}
+
+iframe#menu {
+	position: fixed;
+	width: 100px;
+	height: 100%;
+	left: 0;
+}
+
+#side-menu ul li a:visited, #side-menu ul li a {
+	color: white !important;
+}
+
