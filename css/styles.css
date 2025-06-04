@@ -30,3 +30,9 @@ body h1, #menu, #footer, .main-content {
     display: block;
     padding-bottom: 10px;
 }
+
+marquee {
+    font-size: 20px;
+    color: red;
+    font-family: cursive;
+}
