@@ -47,6 +47,23 @@ marquee {
 #aboutme ul li, #side-menu ul li {
 	list-style-type: disclosure-closed;
 }
+#side-menu ul li {
+	margin-bottom: 5px;
+}
+
+#blog ul li {
+	list-style-type: circle;
+	border-bottom: 3px groove;
+	margin-right: 100px;
+}
+
+#blog ul li:last-child {
+	border-bottom: 0;
+}
+
+#menu a:visited {
+	color: blue;
+}
 
 .aboutme#menu a:visited, .aboutme#menu a {
 	color: red;
@@ -56,7 +73,7 @@ marquee {
 	color: aqua;
 }
 
-.main-content#aboutme {
+.main-content#aboutme, .main-content#blog {
 	text-align: left;
 	margin-left: 200px;
 	padding-top: 50px;
@@ -74,7 +91,7 @@ iframe {
 
 iframe#menu {
 	position: fixed;
-	width: 100px;
+	width: 125px;
 	height: 100%;
 	left: 0;
 }
