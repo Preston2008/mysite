@@ -18,10 +18,11 @@ body h1, #menu, #footer, .main-content {
 
 .main-content {
 	padding-top: 200px;
+	min-height: 800px;
 }
 
 #footer {
-	position: fixed;
+	position: relative;
     bottom: 0;
 	width: 100%;
 	padding-bottom: 10px;
@@ -98,5 +99,16 @@ iframe#menu {
 
 #side-menu ul li a:visited, #side-menu ul li a {
 	color: white !important;
+}
+
+.ps {
+	text-align: right;
+    margin-right: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  #footer {
+	position: fixed;
+  }
 }
 
