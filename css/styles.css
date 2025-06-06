@@ -179,7 +179,7 @@ video {
 
 @media (orientation: landscape) {
   #footer, #footer-blog {
-	position: relative;
+	position: relative !important;
   }
 }
 
