@@ -62,7 +62,7 @@ marquee {
 	border-bottom: 0;
 }
 
-#menu a:visited {
+#menu a:visited, #blog a:visited {
 	color: blue;
 }
 
