@@ -143,5 +143,9 @@ video {
     padding-top: 100px !important;
   }
   
+  #blogpage #footer {
+	position: relative !important;
+  }
+  
 }
 
