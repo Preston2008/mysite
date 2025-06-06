@@ -134,5 +134,9 @@ video {
   .main-content#aboutme, .main-content#links {
 	margin-left: 50px !important;
   }
+  
+  .ps {
+	text-align: left  !important;
+  }
 }
 
