@@ -116,6 +116,12 @@ iframe#menu {
 	display: none;
 }
 
+video {
+	display: block;
+    margin: 0 auto;
+	border: 4px groove;
+}
+
 @media only screen and (max-width: 600px) {
   #footer {
 	position: fixed !important;
