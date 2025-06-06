@@ -118,7 +118,7 @@ iframe#menu {
 
 @media only screen and (max-width: 600px) {
   #footer {
-	position: fixed;
+	position: fixed !important;
   }
 }
 
