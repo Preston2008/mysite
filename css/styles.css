@@ -136,7 +136,12 @@ video {
   }
   
   .ps {
-	text-align: left  !important;
+	text-align: left !important;
   }
+  
+  .main-content, .main-content#aboutme, .main-content#links {
+    padding-top: 100px !important;
+  }
+  
 }
 
