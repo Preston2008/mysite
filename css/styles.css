@@ -130,5 +130,9 @@ video {
   #footer {
 	position: fixed !important;
   }
+  
+  .main-content#aboutme, .main-content#links {
+	padding-left: 50px;
+  }
 }
 
