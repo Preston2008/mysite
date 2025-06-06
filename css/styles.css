@@ -74,10 +74,16 @@ marquee {
 	color: aqua;
 }
 
-.main-content#aboutme, .main-content#blog {
+.main-content#blog {
 	text-align: left;
 	margin-left: 200px;
 	padding-top: 50px;
+}
+
+.main-content#aboutme {
+	text-align: left;
+	margin-left: 200px;
+	padding-top: 150px;
 }
 
 #footer a:hover {
