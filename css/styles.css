@@ -126,6 +126,10 @@ video {
 	text-align: left;
 }
 
+.mobile {
+	display: none;
+  }
+
 @media screen and (min-resolution: 192dpi) { 
   #footer {
 	position: fixed !important;
@@ -150,6 +154,22 @@ video {
   
   #footer-blog {
 	  padding-top: 100px !important;
+  }
+  
+  .desktop {
+	display: none;
+  }
+  
+  .mobile {
+	display: block;
+  }
+  
+  iframe#header {
+	width: 108%;
+  }
+  
+  .mobile img {
+	width: -webkit-fill-available;
   }
 }
 
