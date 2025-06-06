@@ -132,7 +132,7 @@ video {
   }
   
   .main-content#aboutme, .main-content#links {
-	padding-left: 50px;
+	padding-left: 50px !important;
   }
 }
 
