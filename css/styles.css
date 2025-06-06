@@ -147,6 +147,10 @@ video {
     padding-top: 100px !important;
   }
   
+  .main-content#guestbook {
+    padding-top: 0 !important;
+  }
+  
   .main-content#blog {
 	  margin-left: 10px !important;
 	  margin-bottom: 100px;
