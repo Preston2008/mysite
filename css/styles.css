@@ -45,7 +45,7 @@ marquee {
     bottom: 15px;
 }
 
-#aboutme ul li, #side-menu ul li {
+#aboutme ul li, #side-menu ul li, #links ul li {
 	list-style-type: disclosure-closed;
 }
 #side-menu ul li {
@@ -70,7 +70,7 @@ marquee {
 	color: red;
 }
 
-.faq#menu a:visited, .faq#menu a, .faq#footer {
+.faq#menu a:visited, .faq#menu a, .faq#footer, #links a, #links a:visited {
 	color: aqua;
 }
 
@@ -80,7 +80,7 @@ marquee {
 	padding-top: 50px;
 }
 
-.main-content#aboutme {
+.main-content#aboutme, .main-content#links {
 	text-align: left;
 	margin-left: 200px;
 	padding-top: 150px;
@@ -120,6 +120,10 @@ video {
 	display: block;
     margin: 0 auto;
 	border: 4px groove;
+}
+
+#links {
+	text-align: left;
 }
 
 @media only screen and (max-width: 600px) {
