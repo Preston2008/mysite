@@ -7,7 +7,7 @@ body {
 	margin: 0;
 }
 
-body h1, #menu, #footer, .main-content {
+body h1, #menu, #footer, #footer-blog, .main-content {
 	text-align: center;
 }
 
@@ -21,14 +21,14 @@ body h1, #menu, #footer, .main-content {
 	min-height: 800px;
 }
 
-#footer {
+#footer, #footer-blog {
 	position: relative;
     bottom: 0;
 	width: 100%;
 	padding-bottom: 10px;
 }
 
-#footer a {
+#footer a, #footer-blog a {
     display: block;
     padding-bottom: 10px;
 }
@@ -86,7 +86,7 @@ marquee {
 	padding-top: 150px;
 }
 
-#footer a:hover {
+#footer a:hover, #footer-blog a:hover {
 	cursor: default;
 }
 
@@ -143,8 +143,8 @@ video {
     padding-top: 100px !important;
   }
   
-  #blogpage #footer {
-	position: relative !important;
+  .main-content#blog {
+	  margin-left: 10px !important;
   }
   
 }
