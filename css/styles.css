@@ -158,6 +158,10 @@ video {
 	  margin-bottom: 100px;
   }
   
+  #blog ul li {
+	margin-right: 40px !important;
+}
+  
   #footer-blog {
 	  padding-top: 100px !important;
   }
