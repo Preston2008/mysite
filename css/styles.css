@@ -76,11 +76,12 @@ marquee {
 
 .main-content#blog {
 	text-align: left;
-	margin-left: 200px;
+	margin: 0 100px;
 	padding-top: 50px;
 }
 
 .main-content#aboutme, .main-content#links {
+	margin-right: 200px;
 	text-align: left;
 	margin-left: 200px;
 	padding-top: 150px;
@@ -137,6 +138,7 @@ video {
   
   .main-content#aboutme, .main-content#links {
 	margin-left: 50px !important;
+	margin-right: 0 !important;
   }
   
   .ps {
@@ -152,7 +154,7 @@ video {
   }
   
   .main-content#blog {
-	  margin-left: 10px !important;
+	  margin-left: 0 10px !important;
 	  margin-bottom: 100px;
   }
   
