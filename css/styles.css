@@ -58,8 +58,20 @@ marquee {
 	margin-right: 100px;
 }
 
-#blog ul li:last-child {
+#blog ul li:last-child,
+#blog #pager ul li {
 	border-bottom: 0;
+}
+
+#blog ul li:nth-child(n+5) {
+  /*display: none;*/
+}
+
+#blog #pager ul li {
+	list-style-type: none;
+	display: inline-block !important;
+	margin-right: 10px;
+	cursor: pointer;
 }
 
 #menu a:visited, #blog a:visited, #officecamlink {
