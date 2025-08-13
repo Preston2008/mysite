@@ -139,9 +139,23 @@ video {
 	text-align: left;
 }
 
+.story {
+	display: none;
+}
+
+#side-menu.haunted ul li {
+	margin-bottom: 10px;
+}
+
+#side-menu.haunted ul li a:hover,
+#side-menu.haunted ul li a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .mobile {
 	display: none;
-  }
+ } 
 
 @media screen and (min-resolution: 192dpi) { 
   #footer {
