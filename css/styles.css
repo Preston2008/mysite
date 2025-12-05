@@ -104,6 +104,10 @@ marquee {
 	color: aqua;
 }
 
+.faq#footer {
+	padding-top: 100px;
+}
+
 .main-content#faq {
 	padding-top: 25px;
 }
