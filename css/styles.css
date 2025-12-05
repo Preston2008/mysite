@@ -185,6 +185,10 @@ video {
   #footer {
 	position: fixed !important;
   }
+
+  #footer.faq {
+	position: relative !important;
+  }
   
   .main-content#aboutme, .main-content#links {
 	margin-left: 50px !important;
@@ -203,13 +207,19 @@ video {
     padding-top: 0 !important;
   }
   
-  .main-content#blog {
+  .main-content#blog,
+  .main-content#faq, {
 	margin: 0 10px !important;
 	margin-bottom: 100px;
   }
 
   .main-content#faq {
-	padding-top: 10px;
+	padding-top: 10px !important;
+	margin: 0 10px !important;
+  }
+
+  .inner-content {
+	padding-right: 35px;
   }
   
   #blog ul li {
