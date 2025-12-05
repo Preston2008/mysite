@@ -17,8 +17,7 @@ body h1, #menu, #footer, #footer-blog, .main-content {
 }
 
 .main-content {
-	padding-top: 200px;
-	min-height: 800px;
+	min-height: 745px;
 }
 
 #footer, #footer-blog {
@@ -78,6 +77,11 @@ marquee {
 	color: blue;
 }
 
+#menu.haunted a:visited,
+#menu.haunted a {
+	color: limegreen;
+}
+
 .aboutme#menu a:visited, .aboutme#menu a {
 	color: red;
 }
@@ -116,6 +120,10 @@ iframe#menu {
 	left: 0;
 }
 
+iframe#menu.haunted {
+	width: 250px;
+}
+
 #side-menu ul li a:visited, #side-menu ul li a {
 	color: white !important;
 }
@@ -150,12 +158,119 @@ video {
 #side-menu.haunted ul li a:hover,
 #side-menu.haunted ul li a {
 	text-decoration: underline;
-	cursor: pointer;
+}
+	
+#enter {	
+	position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+#enter-page marquee {
+    position: absolute;
+    top: 60%;
+    left: 0;
+	color: limegreen;
+}
+
+#menu-image {
+	position: absolute;
+    top: 340px;
+    left: 46%;
+}
+
+#test tr,
+#test td {
+	height: 87px;
 }
 
 .mobile {
 	display: none;
- } 
+ }
+ 
+ .inline {
+	display: inline-block;
+	width: 135px;
+	text-align: left;
+	padding: 10px;
+	vertical-align: top;
+	margin-top: 5px;
+ }
+ 
+ .inline ul {
+	padding-left: 15px;
+	list-style-type: square;
+	padding-bottom: 15px;
+	/*border-bottom: 3px groove;*/
+ }
+ 
+ .main-content .inline:nth-child(3),
+ .main-content .inline:nth-child(4),
+ .main-content .inline:nth-child(5) {
+	border-right: 3px groove;
+}
+
+ .main-content {
+    margin: 100px auto;
+    width: 860px;
+	color: #000;
+	background: #fff;
+ }
+ 
+ .left {
+	text-align: left;
+ }
+ 
+ #aolLogo {
+	padding-left: 19px;
+    padding-bottom: 7px;
+    padding-top: 9px;
+    width: 136px;
+    display: inline-block;
+ }
+ 
+ #aolMenu {
+	display: inline-block;
+	background: red;
+    color: #fff;
+    height: 38px;
+    vertical-align: top;
+	width: 701px;
+ }
+ 
+ #banner {
+	display: block;
+    background: #9ACCCD;
+    height: 119px;
+	margin-top: 5px;
+ }
+ 
+ #news ul {
+	display: inline-block;
+    vertical-align: top;
+	list-style-type: square;
+ }
+ 
+ #date {
+	color: #fff;
+    background: #000;
+	padding-left: 20px;
+ }
+ 
+ h4 {
+	 margin: 0;
+	 padding: 0;
+	 color: red;
+	 text-decoration: underline;
+ }
+ 
+ h5 {
+	margin-top: 10px;
+    padding: 0 10px;
+	display: inline-block;
+	margin-bottom: 0;
+	border-right: 1px solid #fff;
+ }
 
 @media screen and (min-resolution: 192dpi) { 
   #footer {

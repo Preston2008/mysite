@@ -1,24 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html style="background: url('images/IMG_4557.jpg')";>
 	<head>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="./css/styles.css">
-		<script src="./javascript/jquery-3.7.1.min.js"></script>
-		<script src="./javascript/scaryStories.js"></script>
 		<title>Scary Stories</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 	<body>
 	
-	<iframe id="menu" src="menu_haunted.html" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"></iframe>
-	<iframe id="header" src="header_haunted.html"></iframe>
-
+	<h1>Scary Stories</h1>
+	
+	<div id="menu" class="haunted">
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./aboutme.html">About me</a></li>
+			<li><a href="./blog.html">Blog</a></li>
+			<li><a href="./gallery.html">Gallery</a></li>
+			<li><a href="./faq.html">FAQ</a></li>
+			<li><a href="./guestbook.html">Guest book</a></li>
+			<li><a href="./contact.html">Contact me</a></li>
+			<li><a href="./links.html">Links</a></li>
+			<li><a href="./sitemap.html">Site map</a></li>
+		</ul>
 	</div>
 	
 	<div class="main-content" style="padding-left: 150px; padding-top: 50px;">
+		
+		<img id="menu-image" src="images/IMG_4565.GIF" />
+	
+		<ul>
+			<li style="left: 200px;"><a href="">Scary Story 1</a></li>
+			<li style="left: 275px; top: 125px;"><a href="">Scary Story 2</a></li>
+			<li style="left: 250px; top: 250px;"><a href="">Scary Story 3</a></li>
+			<li style="left: 175px; top: 350px;"><a href="">Scary Story 4</a></li>
+			<li style="left: 50px; top: 400px;"><a href="">Scary Story 5</a></li>
+		</ul>
+	
 		<div class="stories">
 			<div class="story" id="state"><p>Boo!</p></div>
 		</div>		
+	
+	
+	<!--<div id="test">
+		<table style="margin: auto; height: 650px;">
+			<tr>
+
+				<td></td>
+				<td><a href="">Scary Story 1</a></td>
+			</tr>
+			
+			<tr>
+
+				<td></td>
+				<td><a href="">Scary Story 2</a></td>
+			</tr>
+			
+			<tr>
+
+				<td><img id="table-image" src="images/IMG_4565.GIF" /></td>
+				<td><a href="">Scary Story 3</a></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td><a href="">Scary Story 4</a></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td><a href="">Scary Story 5</a></td>
+			</tr>
+		</table>
+	</div>-->
+	
 	</div>
 	
 	<div id="footer-blog">
@@ -29,3 +83,16 @@
 
 	</body>
 </html>
+
+<style>
+	.main-content ul {
+		position: relative;
+		list-style: none;
+		left: 35%;
+	}
+	
+	.main-content ul li {
+		position: absolute;
+	}
+
+</style>
