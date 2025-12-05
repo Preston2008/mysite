@@ -188,6 +188,7 @@ video {
 
   #footer.faq {
 	position: relative !important;
+	padding-top: 100px;
   }
   
   .main-content#aboutme, .main-content#links {
