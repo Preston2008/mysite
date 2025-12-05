@@ -21,6 +21,7 @@ body h1, #menu, #footer, #footer-blog, .main-content {
 	min-height: 800px;
 }
 
+/*Footer*/
 #footer, #footer-blog {
 	position: relative;
     bottom: 0;
@@ -31,6 +32,10 @@ body h1, #menu, #footer, #footer-blog, .main-content {
 #footer a, #footer-blog a {
     display: block;
     padding-bottom: 10px;
+}
+
+#footer a:hover, #footer-blog a:hover {
+	cursor: default;
 }
 
 marquee {
@@ -45,13 +50,23 @@ marquee {
     bottom: 15px;
 }
 
-#aboutme ul li, #side-menu ul li, #links ul li {
+/*About Me Page*/
+#aboutme ul li, #side-menu ul li, #links ul li, #faq ul li {
 	list-style-type: disclosure-closed;
 }
-#side-menu ul li {
-	margin-bottom: 5px;
+
+.aboutme#menu a:visited, .aboutme#menu a {
+	color: red;
 }
 
+.main-content#aboutme, .main-content#links {
+	margin-right: 200px;
+	text-align: left;
+	margin-left: 200px;
+	padding-top: 150px;
+}
+
+/*Blog Page*/
 #blog ul li {
 	list-style-type: circle;
 	border-bottom: 3px groove;
@@ -74,39 +89,37 @@ marquee {
 	cursor: pointer;
 }
 
-#menu a:visited, #blog a:visited, #officecamlink {
-	color: blue;
-}
-
-.aboutme#menu a:visited, .aboutme#menu a {
-	color: red;
-}
-
-.faq#menu a:visited, .faq#menu a, .faq#footer, #links a, #links a:visited {
-	color: aqua;
-}
-
-.main-content#faq {
-	padding-top: 50px;
-}
-
 .main-content#blog {
 	text-align: left;
 	margin: 0 100px;
 	padding-top: 50px;
 }
 
-.main-content#aboutme, .main-content#links {
-	margin-right: 200px;
+#menu a:visited, #blog a:visited, #officecamlink {
+	color: blue;
+}
+
+/*FAQ Page*/
+.faq#menu a:visited, .faq#menu a, .faq#footer, #links a, #links a:visited {
+	color: aqua;
+}
+
+.main-content#faq {
+	padding-top: 25px;
+}
+
+.inner-content {
 	text-align: left;
-	margin-left: 200px;
-	padding-top: 150px;
+	padding-top: 25px;
+	padding-right: 80px;
 }
 
-#footer a:hover, #footer-blog a:hover {
-	cursor: default;
+.subtext {
+	font-size: small;
+	font-style: italic;
 }
 
+/*Side Menu & iFrame*/
 iframe {
 	width: 100%;
 	border-width: thick;
@@ -124,6 +137,10 @@ iframe#menu {
 	color: white !important;
 }
 
+#side-menu ul li {
+	margin-bottom: 5px;
+}
+
 .ps {
 	text-align: right;
     margin-right: 35px;
@@ -139,10 +156,12 @@ video {
 	border: 4px groove;
 }
 
+/*Links Page*/
 #links {
 	text-align: left;
 }
 
+/*Haunted Stories Page*/
 .story {
 	display: none;
 }
@@ -161,6 +180,7 @@ video {
 	display: none;
  } 
 
+ /*Cellular Compatibility*/
 @media screen and (min-resolution: 192dpi) { 
   #footer {
 	position: fixed !important;
@@ -184,16 +204,20 @@ video {
   }
   
   .main-content#blog {
-	  margin: 0 10px !important;
-	  margin-bottom: 100px;
+	margin: 0 10px !important;
+	margin-bottom: 100px;
+  }
+
+  .main-content#faq {
+	padding-top: 10px;
   }
   
   #blog ul li {
 	margin-right: 40px !important;
-}
+  }
   
   #footer-blog {
-	  padding-top: 100px !important;
+	padding-top: 100px !important;
   }
   
   .desktop {
