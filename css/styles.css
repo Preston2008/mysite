@@ -253,8 +253,12 @@ video {
     padding-top: 100px !important;
   }
 
-  .main-content#goodies, .main-content#gallery {
+  .main-content#goodies, .main-content#gallery, .main-content#blog {
 	padding-top: 50px !important;
+  }
+
+  .main-content#blog ul li img {
+	width: 75% !important;
   }
   
   .main-content#guestbook {
