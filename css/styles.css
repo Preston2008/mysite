@@ -231,7 +231,7 @@ video {
 	position: fixed !important;
   }
 
-  #footer.faq {
+  #footer.faq, #footer.goodies {
 	position: relative !important;
 	padding-top: 100px;
   }
