@@ -244,13 +244,18 @@ video {
   .main-content, .main-content#aboutme, .main-content#links, .main-content#sitemap {
     padding-top: 100px !important;
   }
+
+  .main-content#goodies, .main-content#gallery {
+	padding-top: 50px !important;
+  }
   
   .main-content#guestbook {
     padding-top: 0 !important;
   }
   
   .main-content#blog,
-  .main-content#faq, {
+  .main-content#faq, 
+  .main-content#goodies {
 	margin: 0 10px !important;
 	margin-bottom: 100px;
   }
