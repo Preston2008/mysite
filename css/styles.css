@@ -59,7 +59,7 @@ marquee {
 	color: red;
 }
 
-.main-content#aboutme, .main-content#links, .main-content#sitemap {
+.main-content#aboutme, .main-content#links, .main-content#sitemap, .main-content#goodies {
 	margin-right: 200px;
 	text-align: left;
 	margin-left: 200px;
@@ -134,6 +134,15 @@ marquee {
 
 #sitemap ul ul ul li {
 	list-style-type: square;
+}
+
+/*Goodies*/
+.main-content#goodies {
+	padding-top: 100px !important;
+}
+
+.main-content#goodies tr td {
+	text-align: center;
 }
 
 /*Side Menu & iFrame*/
