@@ -145,6 +145,10 @@ marquee {
 	width: 250px;
 }
 
+.instr {
+	padding-left: 10px;
+}
+
 /*Funny*/
 .main-content#funny {
 	padding-top: 100px !important;
@@ -296,6 +300,10 @@ video {
   .mobile img {
 	width: -webkit-fill-available;
   }
+
+  .instr {
+	padding-left: 0;
+}
 }
 
 @media (orientation: landscape) {
