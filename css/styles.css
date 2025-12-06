@@ -141,6 +141,10 @@ marquee {
 	text-align: center;
 }
 
+.main-content#goodies img {
+	width: 250px;
+}
+
 /*Funny*/
 .main-content#funny {
 	padding-top: 100px !important;
