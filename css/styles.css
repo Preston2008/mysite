@@ -137,12 +137,19 @@ marquee {
 }
 
 /*Goodies*/
-.main-content#goodies {
-	padding-top: 100px !important;
-}
-
 .main-content#goodies tr td {
 	text-align: center;
+}
+
+/*Funny*/
+.main-content#funny {
+	padding-top: 100px !important;
+	margin: 0 50px;
+	padding-bottom: 200px;
+}
+
+.main-content#funny img {
+	width: 80%;
 }
 
 /*Side Menu & iFrame*/
@@ -180,6 +187,14 @@ video {
 	display: block;
     margin: 0 auto;
 	border: 4px groove;
+}
+
+/*Gallery*/
+#galleryLinks {
+	display: inline-block;
+    list-style-type: disclosure-closed;
+    text-align: left;
+    padding-bottom: 75px;
 }
 
 /*Links Page*/
