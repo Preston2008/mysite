@@ -51,7 +51,7 @@ marquee {
 }
 
 /*About Me Page*/
-#aboutme ul li, #side-menu ul li, #links ul li, #faq ul li {
+#aboutme ul li, #side-menu ul li, #links ul li, #faq ul li, #sitemap ul li {
 	list-style-type: disclosure-closed;
 }
 
@@ -59,7 +59,7 @@ marquee {
 	color: red;
 }
 
-.main-content#aboutme, .main-content#links {
+.main-content#aboutme, .main-content#links, .main-content#sitemap {
 	margin-right: 200px;
 	text-align: left;
 	margin-left: 200px;
@@ -121,6 +121,19 @@ marquee {
 .subtext {
 	font-size: small;
 	font-style: italic;
+}
+
+/*Sitemap*/
+.main-content#sitemap ul li a {
+	color: #fff;
+}
+
+#sitemap ul ul {
+	padding-left: 15px;
+}
+
+#sitemap ul ul li {
+	list-style-type: square;
 }
 
 /*Side Menu & iFrame*/
@@ -195,7 +208,7 @@ video {
 	padding-top: 100px;
   }
   
-  .main-content#aboutme, .main-content#links {
+  .main-content#aboutme, .main-content#links, .main-content#sitemap {
 	margin-left: 50px !important;
 	margin-right: 0 !important;
   }
@@ -204,7 +217,7 @@ video {
 	text-align: left !important;
   }
   
-  .main-content, .main-content#aboutme, .main-content#links {
+  .main-content, .main-content#aboutme, .main-content#links, .main-content#sitemap {
     padding-top: 100px !important;
   }
   
