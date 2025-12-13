@@ -24,7 +24,7 @@ $(document).ready(function() {
     //firebase.initializeApp(firebaseConfig);
 
     // Initialize Realtime Database and get a reference to the service
-    const database = getDatabase(app);
+    const db = getDatabase(app);
 
 
     async function readCounterData() {
