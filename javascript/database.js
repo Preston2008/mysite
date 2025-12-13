@@ -1,5 +1,5 @@
-import { initializeApp } from "./firebase-app.js";
-import { getDatabase, ref, set } from "./firebase-database.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
 $(document).ready(function() {
     
     // Import the functions you need from the SDKs you need
