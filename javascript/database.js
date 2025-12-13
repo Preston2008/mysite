@@ -1,4 +1,5 @@
 import { initializeApp } from "./firebase-app.js";
+import { getDatabase, ref, set } from "./firebase-database.js";
 $(document).ready(function() {
     
     // Import the functions you need from the SDKs you need
@@ -23,11 +24,11 @@ $(document).ready(function() {
     //firebase.initializeApp(firebaseConfig);
 
     // Initialize Realtime Database and get a reference to the service
-    const database = firebase.database();
+    const database = getDatabase(app);
 
 
     function readCounterData() {
-    const counterRef = firebase.database().ref('counter');
+    const counterRef = database.ref('counter');
     counterRef.once('value').then((snapshot) => {
         const data = snapshot.val();
         alert(data);
