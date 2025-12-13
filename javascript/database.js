@@ -14,7 +14,8 @@ $(document).ready(function() {
     projectId: "juliensworld-18c44",
     storageBucket: "juliensworld-18c44.firebasestorage.app",
     messagingSenderId: "969692121784",
-    appId: "1:969692121784:web:ba2105294795d7b56d024d"
+    appId: "1:969692121784:web:ba2105294795d7b56d024d",
+    databaseURL: "https://juliensworld-18c44.firebaseio.com/",
     };
 
     // Initialize Firebase
