@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from "./firebase/app";
 $(document).ready(function() {
     
     // Import the functions you need from the SDKs you need
