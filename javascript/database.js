@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 
     async function readCounterData() {
-        const snapshot = await get(child(ref(db), 'counter'));
+        const snapshot = await get(child(ref(db), '/counter'));
         if (snapshot.exists()) {
             console.log("Data:", snapshot.val());
             alert(snapshot.val())
@@ -41,7 +41,7 @@ $(document).ready(function() {
     //    alert(data);
     //    console.log(data);
     //});
-}
+    }
 
     // Example usage
     readCounterData();
