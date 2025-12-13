@@ -1,5 +1,5 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-database.js";
 $(document).ready(function() {
     
     // Import the functions you need from the SDKs you need
@@ -27,13 +27,20 @@ $(document).ready(function() {
     const database = getDatabase(app);
 
 
-    function readCounterData() {
-    const counterRef = database.ref('counter');
-    counterRef.once('value').then((snapshot) => {
-        const data = snapshot.val();
-        alert(data);
-        console.log(data);
-    });
+    async function readCounterData() {
+        const snapshot = await get(child(ref(db), 'counter'));
+        if (snapshot.exists()) {
+            console.log("Data:", snapshot.val());
+            alert(snapshot.val())
+        }
+
+
+    //const counterRef = database.ref('counter');
+    //counterRef.once('value').then((snapshot) => {
+    //    const data = snapshot.val();
+    //    alert(data);
+    //    console.log(data);
+    //});
 }
 
     // Example usage
