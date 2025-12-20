@@ -9,11 +9,7 @@ $(document).ready(function() {
 		var index = $(this).text();
 		
 		
-		$("#blog ul li").show();
-		if (index != 1) {
-			$("#blog ul li").slice(0, pagesize*(index-1)).hide();
-		} else {
-			$("#blog ul li").slice(pagesize, listsize).hide();
-		}		
+		$("#blog ul li").hide();
+		$("#blog ul li").slice(pagesize*(index-1), pagesize*(index)).show();	
 	});
 });
