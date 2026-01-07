@@ -160,6 +160,10 @@ marquee {
 	width: 80%;
 }
 
+.main-content#funny img#quotePic {
+	width: 25%;
+}
+
 /*Side Menu & iFrame*/
 iframe {
 	width: 100%;
@@ -307,7 +311,12 @@ video {
 
   .instr {
 	padding-left: 0;
-}
+  }
+
+  .main-content#funny img#quotePic {
+	width: 50%;
+  }
+
 }
 
 @media (orientation: landscape) {
