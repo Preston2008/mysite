@@ -229,6 +229,12 @@ video {
 	cursor: pointer;
 }
 
+/*My Office*/
+.officehistory {
+	padding-left: 125px; 
+	padding-right: 125px;
+}
+
 .mobile {
 	display: none;
  } 
@@ -261,7 +267,8 @@ video {
 	padding-top: 50px !important;
   }
 
-  .main-content#blog ul li img {
+  .main-content#blog ul li img,
+  .main-content#myoffice p img {
 	width: 75% !important;
   }
   
@@ -316,6 +323,11 @@ video {
   .main-content#funny img#quotePic {
 	width: 75%;
   }
+
+.officehistory p {
+	padding-left: 0px; 
+	padding-right: 0px;
+}
 
 }
 
