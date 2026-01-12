@@ -70,7 +70,12 @@ marquee {
 #blog ul li {
 	list-style-type: circle;
 	border-bottom: 3px groove;
-	margin-right: 100px;
+	margin-right: 50px;
+}
+
+#blog ul li img,
+#myoffice p img {
+	width: 350px;
 }
 
 #blog ul li:last-child,
