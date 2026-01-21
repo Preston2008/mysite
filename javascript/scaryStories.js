@@ -6,5 +6,6 @@ $(document).ready(function() {
 });
 
 function showStory(title) {
+	$(".story").hide();
 	$("#" + title).show();
 }

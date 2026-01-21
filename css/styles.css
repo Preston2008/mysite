@@ -224,6 +224,10 @@ video {
 	display: none;
 }
 
+#menu.haunted a {
+	color: green;
+}
+
 #side-menu.haunted ul li {
 	margin-bottom: 10px;
 }
@@ -232,6 +236,11 @@ video {
 #side-menu.haunted ul li a {
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+#menu-image {
+	position: absolute;
+	top: 300px;
 }
 
 /*My Office*/
