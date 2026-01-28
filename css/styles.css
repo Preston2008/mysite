@@ -87,7 +87,8 @@ marquee {
   /*display: none;*/
 }
 
-#blog #pager ul li {
+#blog #pager ul li,
+#funny #pager ul li {
 	list-style-type: none;
 	display: inline-block !important;
 	margin-right: 10px !important;
@@ -167,6 +168,11 @@ marquee {
 
 .main-content#funny img#quotePic {
 	width: 25%;
+}
+
+#funny #pager ul {
+	margin: 0;
+	padding: 0;
 }
 
 /*Side Menu & iFrame*/
