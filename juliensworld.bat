@@ -24,7 +24,7 @@ echo Writing to blog with following update message: %newline%%newline%%commitMsg
 echo.
 
 :: write changes to versioning tool
-git commit -am "%commitMsg%" -m "" -m "WinXP" -m "Signed-off-by: Julien ^<jjalageas@gmail.com^>"
+git commit -am "%commitMsg%" -m "" -m "WinXP" -m "Signed-off-by: Julien <jjalageas@gmail.com>"
 git push
 echo.
 
