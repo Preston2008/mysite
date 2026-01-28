@@ -155,6 +155,11 @@ marquee {
 	padding-left: 10px;
 }
 
+#goodies .badge {
+	width: 100px !important;
+	height: 35px !important;
+}
+
 /*Funny*/
 .main-content#funny {
 	padding-top: 100px !important;
