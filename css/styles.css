@@ -101,7 +101,7 @@ marquee {
 	padding-top: 50px;
 }
 
-#menu a:visited, #blog a:visited, #officecamlink {
+#menu a:visited, #blog a:visited, #officecamlink, #funny a:visited {
 	color: blue;
 }
 
@@ -169,6 +169,10 @@ marquee {
 
 .main-content#funny img {
 	width: 80%;
+}
+
+.main-content#funny.archive img {
+	width: 480px;
 }
 
 .main-content#funny img#quotePic {
@@ -347,6 +351,10 @@ video {
 
   .main-content#funny img#quotePic {
 	width: 75%;
+  }
+  
+  .main-content#funny.archive img {
+	width: 80%;
   }
 
 .officehistory {
