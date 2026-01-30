@@ -155,9 +155,17 @@ marquee {
 	padding-left: 10px;
 }
 
-#goodies .badge {
+#goodies .badge135 {
 	width: 100px !important;
 	height: 35px !important;
+}
+
+#goodies .badge240 {
+	width: 200px !important;
+	height: 40px !important;
+	border-width: thick;
+	border-style: groove;
+	border-color: grey;
 }
 
 /*Funny*/

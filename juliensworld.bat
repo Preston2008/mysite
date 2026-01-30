@@ -15,7 +15,7 @@ echo Negotiating with host...
 echo.
 
 :: versioning user input
-set /p commitMsg=Enter versioning data:
+set /p commitMsg=Enter versioning data: 
 set newline=^& echo.
 echo.
 
