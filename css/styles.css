@@ -160,6 +160,11 @@ marquee {
 	height: 35px !important;
 }
 
+#goodies .badge50 {
+	width: 50px !important;
+	height: 50px !important;
+}
+
 #goodies .badge240 {
 	width: 200px !important;
 	height: 40px !important;
