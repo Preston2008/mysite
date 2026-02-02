@@ -330,7 +330,7 @@ video {
 
   .main-content#blog ul li img,
   .main-content#myoffice p img {
-	width: 75% !important;
+	/*width: 75% !important;*/
   }
   
   .main-content#guestbook {
