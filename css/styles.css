@@ -306,7 +306,7 @@ video {
 	padding-top: 100px;
   }
   
-  .main-content#aboutme, .main-content#links, .main-content#sitemap {
+  .main-content#links, .main-content#sitemap {
 	margin-left: 50px !important;
 	margin-right: 0 !important;
   }
@@ -315,12 +315,17 @@ video {
 	text-align: left !important;
   }
   
-  .main-content, .main-content#aboutme, .main-content#links, .main-content#sitemap {
+  .main-content, .main-content#links, .main-content#sitemap {
     padding-top: 100px !important;
   }
 
   .main-content#goodies, .main-content#gallery, .main-content#blog {
 	padding-top: 50px !important;
+  }
+  
+  .main-content#aboutme {
+	margin: 0 25px;
+	padding-top: 34px;
   }
 
   .main-content#blog ul li img,
