@@ -69,6 +69,9 @@ marquee {
 }
 
 .main-content#aboutme {
+	margin-right: 200px;
+	text-align: left;
+	margin-left: 200px;
 	padding-top: 50px;
 }
 
