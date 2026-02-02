@@ -136,6 +136,10 @@ img#contact {
 	padding-top: 25px;
 }
 
+.main-content#faq a:visited {
+	color: blue;
+}
+
 .inner-content {
 	text-align: left;
 	padding-top: 25px;
