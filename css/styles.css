@@ -88,6 +88,10 @@ marquee {
 	width: 350px;
 }
 
+img#contact {
+	width: 120px;
+}
+
 #aboutme p img {
 	display: inline-block;
 }
