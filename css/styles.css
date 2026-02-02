@@ -301,7 +301,7 @@ video {
 	position: fixed !important;
   }
 
-  #footer.faq, #footer.goodies {
+  #footer.faq, #footer.goodies, #footer.aboutme {
 	position: relative !important;
 	padding-top: 100px;
   }
@@ -333,6 +333,7 @@ video {
   }
   
   .main-content#blog,
+  .main-content#aboutme,
   .main-content#faq, 
   .main-content#goodies {
 	margin: 0 10px !important;
