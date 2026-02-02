@@ -324,8 +324,8 @@ video {
   }
   
   .main-content#aboutme {
-	margin: 0 25px;
-	padding-top: 34px;
+	margin: 0 25px !important;
+	padding-top: 34px !important;;
   }
 
   .main-content#blog ul li img,
@@ -338,7 +338,6 @@ video {
   }
   
   .main-content#blog,
-  .main-content#aboutme,
   .main-content#faq, 
   .main-content#goodies {
 	margin: 0 10px !important;
