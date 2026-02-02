@@ -13,6 +13,8 @@ body h1, #menu, #footer, #footer-blog, .main-content {
 
 #menu ul li {
 	display: inline-block;
+	*display: inline;
+	zoom: 1;
 	margin-right: 20px;
 }
 
@@ -59,11 +61,15 @@ marquee {
 	color: red;
 }
 
-.main-content#aboutme, .main-content#links, .main-content#sitemap, .main-content#goodies {
+.main-content#links, .main-content#sitemap, .main-content#goodies {
 	margin-right: 200px;
 	text-align: left;
 	margin-left: 200px;
 	padding-top: 150px;
+}
+
+.main-content#aboutme {
+	padding-top: 50px;
 }
 
 /*Blog Page*/
@@ -74,8 +80,13 @@ marquee {
 }
 
 #blog ul li img,
-#myoffice p img {
+#myoffice p img,
+#aboutme img {
 	width: 350px;
+}
+
+#aboutme p img {
+	display: inline-block;
 }
 
 #blog ul li:last-child,
