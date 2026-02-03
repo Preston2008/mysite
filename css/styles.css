@@ -136,7 +136,8 @@ img#contact {
 	padding-top: 25px;
 }
 
-.main-content#faq a:visited {
+.main-content#faq a:visited,
+.main-content#faq a {
 	color: aqua;
 }
 
@@ -409,4 +410,5 @@ video {
 	position: relative !important;
   }
 }
+
 
