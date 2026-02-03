@@ -11,7 +11,7 @@ $(document).ready(function() {
 	$.ajax({
 		type: "GET",
 		datatype: "XML",
-		url: "http://api.weatherapi.com/v1/current.xml?key=b0ac278b0c0d412f8eb184719260302&q=Roswell,NM",
+		url: "https://api.weatherapi.com/v1/current.xml?key=b0ac278b0c0d412f8eb184719260302&q=Roswell,NM",
 		success: function(xml) {
 			$(xml).find("root").each(function() {
 				$(this).find("current").each(function() {
