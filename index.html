@@ -3,40 +3,130 @@
 	<head>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="./css/styles.css">
+		<script src="./javascript/jquery-3.7.1.min.js"></script>
+		<script src="./javascript/index.js"></script>
 		<title>Julien's World</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 	<body>
 
-	<h1>Welcome to my page!</h1>
-	
-	<div id="menu">
-		<ul>
-			<li><a href="./index.html">Home</a></li>
-			<li><a href="./aboutme.html">About me</a></li>
-			<li><a href="./blog.html">Blog</a></li>
-			<li><a href="./gallery.html">Gallery</a></li>
-			<li><a href="./faq.html">FAQ</a></li>
-			<li><a href="./guestbook.html">Guest book</a></li>
-			<li><a href="./contact.html">Contact me</a></li>
-			<li><a href="./links.html">Links</a></li>
-			<li><a href="./sitemap.html">Site map</a></li>
-		</ul>
-	</div>
+		<h1>Welcome to my page!</h1>
 		
-	<audio controls id="midiPlayer">
-	  <source src="midi/canyon.mp3" type="audio/mpeg">
-	</audio>
-	<div class="main-content">
-		<marquee behavior="scroll" direction="left" scrollamount="10">Welcome to my website, designed entirely by me using the latest tools available, ensuring that it never becomes obsolete. Currently under construction, check back later!</marquee>
-		<img src="images/under_construction.GIF" />
-	</div>
-	
-	<div id="footer">
-		<a href="#" title="web counter"><img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=asbqawk73d1y7rxr1jz3amudphcksm9n" border="0" title="web counter" alt="web counter"></a>
-		&copy; 2026
-		<img id="compatibility" src="images/netscape.GIF" />
-	</div>
+		<div id="menu">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./aboutme.html">About me</a></li>
+				<li><a href="./blog.html">Blog</a></li>
+				<li><a href="./gallery.html">Gallery</a></li>
+				<li><a href="./faq.html">FAQ</a></li>
+				<li><a href="./guestbook.html">Guest book</a></li>
+				<li><a href="./contact.html">Contact me</a></li>
+				<li><a href="./links.html">Links</a></li>
+				<li><a href="./sitemap.html">Site map</a></li>
+			</ul>
+		</div>
+		
+		<audio controls id="midiPlayer">
+		  <source src="midi/canyon.mp3" type="audio/mpeg">
+		</audio>
+		<div class="main-content" id="welcomePage">
+			<marquee behavior="scroll" direction="left" scrollamount="10">Welcome to my website, designed entirely by me using the latest tools available, ensuring that it never becomes obsolete. Currently under construction, check back later!</marquee>
+			<style>
+			    table#statusBar {
+					border-spacing: 5px;
+					width: 630px;
+				}
+				
+				table#statusBar th {
+					border-style: outset; 
+					border-width: 2px; 
+					border-color: grey; 
+				}
+				
+				table#siteUpdates {
+					width: 630px;
+					border-spacing: 5px;
+					margin-top: -5px;
+				}
+				
+				tr {
+					margin-top: 5px;
+					background-color: #d4d0dc; 
+				}
+				
+				th {
+					color: #000;
+					font-style: italic;
+					width: 210px;
+				}
+				
+				table#siteUpdates td {
+					color: black;
+					padding: 5px;
+					width: 210px;
+					border-style: outset; 
+					border-width: 2px; 
+					border-color: grey; 
+					vertical-align: top;
+				}
+				
+			</style>
+			<div id="index">
+				<table id="statusBar">
+					<tr>
+						<th id="latestUpdates" style="color: red; padding-left: 5px;">Latest Updates</th>
+						<!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+						<th style="text-align: right !important; padding-right: 5px;">February 3rd, 2026</th>-->
+					</tr>
+				</table>
+				<table id="siteUpdates">
+					<tr>
+						<td>
+							<div>
+								<strong>Blog Updates:</strong>
+								
+								<p><span><a href="./blog.html">01/27/2026</span></a></p>
+								<p>Dear Sally, I recently purchased a VHS copy of the Felicity pilot episode. Felicity
+								is WB's latest Tuesday hit starring Keri Russ <a href="./blog.html#blog-item-36">[...]</a></p>
+								
+								<p><span><a href="./blog.html">01/27/2026</span></a></p>
+								<p>Preston has loved playing on the Gamecube since he was little. This afternoon, we decided
+								to revisit a childhood classic, and perhaps on <a href="./blog.html#blog-item-35">[...]</a></p>
+							</div>
+						</td>
+						<td>
+							<div>
+								<strong>Weather</strong>
+								<p>Roswell, NM</br></br>
+								<span id="temp"></span>°F</br>
+								<span id="weather"></span></br>
+								Wind <span id="wind"></span>mph</br>
+								Humidity <span id="humidity"></span>%</p>
+								<br>
+								<strong>Traffic</strong>
+								<p>US285: clear<br>
+								US380: clear</p>
+							</div>
+						</td>
+						<td>
+							<div>
+								<strong>TV Guide</strong>
+								<br>
+								<div id="tvguide"></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<img src="images/under_construction.GIF" />
+		</div>
+		
+		<div id="footer">
+			<a href="#" title="web counter"><img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=asbqawk73d1y7rxr1jz3amudphcksm9n" border="0" title="web counter" alt="web counter"></a>
+			&copy; 2026
+			<img id="compatibility" src="images/netscape.GIF" />
+		</div>
 
 	</body>
 </html>

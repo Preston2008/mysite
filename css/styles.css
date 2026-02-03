@@ -61,6 +61,17 @@ marquee {
 	color: red;
 }
 
+.main-content#welcomePage {
+	padding-top: 50px;
+}
+
+.main-content #index {
+	margin-right: 200px;
+	text-align: left;
+	margin-left: 200px;
+	padding-top: 75px;
+}
+
 .main-content#links, .main-content#sitemap, .main-content#goodies {
 	margin-right: 200px;
 	text-align: left;
@@ -119,7 +130,7 @@ img#contact {
 	padding-top: 50px;
 }
 
-#menu a:visited, #blog a:visited, #officecamlink, #funny a:visited {
+#menu a:visited, #blog a:visited, #officecamlink, #funny a:visited, #siteUpdates a:visited {
 	color: blue;
 }
 
