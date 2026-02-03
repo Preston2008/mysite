@@ -359,7 +359,8 @@ video {
   
   .main-content#blog,
   .main-content#faq, 
-  .main-content#goodies {
+  .main-content#goodies,
+  #index {
 	margin: 0 10px !important;
 	margin-bottom: 100px;
   }
