@@ -137,7 +137,7 @@ img#contact {
 }
 
 .main-content#faq a:visited {
-	color: blue;
+	color: aqua;
 }
 
 .inner-content {
@@ -409,3 +409,4 @@ video {
 	position: relative !important;
   }
 }
+
