@@ -144,6 +144,10 @@ $(document).ready(function() {
 				$("#blogdate"+(i+1)).text(date);
 				$("#blog"+(i+1)).text(text);
 				$("#bloglink"+(i+1)).attr("href", "./blog.html#"+id);
+
+				$("#blogdate_mob"+(i+1)).text(date);
+				$("#blog_mob"+(i+1)).text(text);
+				$("#bloglink_mob"+(i+1)).attr("href", "./blog.html#"+id);
 			}
 		}
 	});
