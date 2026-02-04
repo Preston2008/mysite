@@ -23,6 +23,60 @@ body h1, #menu, #footer, #footer-blog, .main-content {
 	min-height: 800px;
 }
 
+/*Homepage*/
+table#statusBar {
+	border-spacing: 5px;
+	width: 100%;
+}
+
+table#statusBar th {
+	border-style: outset; 
+	border-width: 2px; 
+	border-color: grey; 
+}
+
+table#siteUpdates {
+	width: 100%;
+	border-spacing: 5px;
+	margin-top: -5px;
+}
+
+tr {
+	margin-top: 5px;
+	background-color: #d4d0dc; 
+}
+
+th {
+	color: #000;
+	font-style: italic;
+	width: 210px;
+}
+
+table#siteUpdates td {
+	color: black;
+	padding: 5px;
+	width: 210px;
+	border-style: outset; 
+	border-width: 2px; 
+	border-color: grey; 
+	vertical-align: top;
+}
+
+.main-content#welcomePage {
+	padding-top: 50px;
+}
+
+.main-content #index {
+	margin-right: 200px;
+	text-align: left;
+	margin-left: 200px;
+	padding-top: 75px;
+}
+
+.latest-updates-title {
+	color: red;
+}
+
 /*Footer*/
 #footer, #footer-blog {
 	position: relative;
@@ -59,17 +113,6 @@ marquee {
 
 .aboutme#menu a:visited, .aboutme#menu a {
 	color: red;
-}
-
-.main-content#welcomePage {
-	padding-top: 50px;
-}
-
-.main-content #index {
-	margin-right: 200px;
-	text-align: left;
-	margin-left: 200px;
-	padding-top: 75px;
 }
 
 .main-content#links, .main-content#sitemap, .main-content#goodies {

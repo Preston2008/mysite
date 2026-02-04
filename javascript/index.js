@@ -6,6 +6,30 @@ $(document).ready(function() {
 		idx = (idx+1) % colors.length;
 	}
 	setInterval(blinker, 100);
+
+	function minutestohours(minutes) {
+		const hrs = Math.floor(minutes / 60);
+		const mins = minutes % 60;
+		return `${hrs}h ${mins}m`;
+	}
+
+	//Traffic API Call
+	$.ajax({
+		type: "GET",
+		datatype: "JSON",
+		url: "https://api.tomtom.com/traffic/services/4/flowSegmentData/relative0/10/json?point=33.3943%2C-104.5227&unit=MPH&openLr=false&key=Ce3585C6UjIzMcJAOFXRIp3DXcJ4BCf7",
+		success: function(response) {
+			$("#speed").text(response.flowSegmentData.currentSpeed);
+			var travelTime = Number(response.flowSegmentData.currentTravelTime);
+			$("#travel").text(minutestohours(travelTime));
+			var roadClosure = response.flowSegmentData.roadClosure;
+			var roadClosureTxt = "No";
+			if (roadClosure) {
+				roadClosureTxt = "Yes";
+			}
+			$("#closure").text(roadClosureTxt);
+		}
+	});
 	
 	//Weather API Call
 	$.ajax({
