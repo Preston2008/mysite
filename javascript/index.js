@@ -14,7 +14,7 @@ $(document).ready(function() {
 	}
 
 	var today_dt = new Date();
-	var today_dt_str = today_dt.getMonth() + "/" + today_dt.getDate() + "/" + today_dt.getFullYear();
+	var today_dt_str = today_dt.getMonth()+1 + "/" + today_dt.getDate() + "/" + today_dt.getFullYear();
 	$("#today").text(today_dt_str);
 
 	//Traffic API Call
@@ -116,6 +116,8 @@ $(document).ready(function() {
 				if (realAirtime > 12) {
 					ampm = "pm";
 					realAirtime = realAirtime - 12;
+					if (realAirtime == 0)
+						realAirtime = 12;
 				}
 				var airtimeCentral = realAirtime - 1;
 				html = html + "<br><strong>"+ network + "</strong> " + response[value].show.name + " " + realAirtime.toString() + ampm + "/" + airtimeCentral.toString() + "c<br>";
