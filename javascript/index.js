@@ -125,4 +125,27 @@ $(document).ready(function() {
 			$("#tvguide_mob").html(html);
 		}
 	});
+
+	//Blog API Call
+	$.ajax({
+		type: "GET",
+		datatype: "HTML",
+		url: "https://juliensworld.com/blog.html",
+		success: function(data) {
+			var parser = new DOMParser();
+			var doc = parser.parseFromString(data, "text/html");
+			var blogEntries = doc.getElementById("bloglist").children;
+			for (let i = 0; i < 2; i++) {
+				var id = blogEntries[i].id;
+				var date = blogEntries[i].children[0].innerText;
+				var text = blogEntries[i].children[1].innerText.slice(0, 130);
+				text = text.replace(/\s+/g, ' ').trim()
+
+				$("#blogdate"+(i+1)).text(date);
+				$("#blog"+(i+1)).text(text);
+				$("#bloglink"+(i+1)).attr("href", "./blog.html#"+id);
+			}
+		}
+	});
 });
+
