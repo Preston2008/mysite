@@ -34,10 +34,10 @@
 			<div id="index">
 				<table id="statusBar">
 					<tr>
-						<th><span id="latestUpdates">Latest Updates</span><div id="today">Feb. 4th, 2026</div></th>
+						<th><span id="latestUpdates">Latest Updates</span><div id="today"></div></th>
 					</tr>
 				</table>
-				<table id="siteUpdates">
+				<table id="siteUpdates" class="desktop">
 					<tr>
 						<td>
 							<div>
@@ -73,6 +73,51 @@
 								<span class="latest-updates-title"><strong>TV Guide</strong></span>
 								<br>
 								<div id="tvguide"></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<table id="siteUpdates" class="mobile">
+					<tr>
+						<td>
+							<div>
+								<span class="latest-updates-title"><strong>Blog Updates</strong></span>
+								
+								<p><span><a href="./blog.html">01/27/2026</span></a></p>
+								<p>Dear Sally, I recently purchased a VHS copy of the Felicity pilot episode. Felicity
+								is WB's latest Tuesday hit starring Keri Russ <a href="./blog.html#blog-item-36">[...]</a></p>
+								
+								<p><span><a href="./blog.html">01/27/2026</span></a></p>
+								<p>Preston has loved playing on the Gamecube since he was little. This afternoon, we decided
+								to revisit a childhood classic, and perhaps on <a href="./blog.html#blog-item-35">[...]</a></p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
+								<span class="latest-updates-title"><strong>Weather</strong></span>
+								<p><strong>Roswell, NM</strong></br>
+								<span id="temp_mob"></span>°F,&nbsp;
+								<span id="weather_mob"></span></br>
+								Wind: <span id="wind_mob"></span>mph</br>
+								Humidity: <span id="humidity_mob"></span>%</p>
+								<br>
+								<span class="latest-updates-title"><strong>Traffic</strong></span>
+								<p><strong>US285</strong></br> 
+								Current speed: <span id="speed_mob"></span>mph<br>
+								Travel time: <span id="travel_mob"></span><br>
+								Road closures: <span id="closure_mob"></span><br></p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
+								<span class="latest-updates-title"><strong>TV Guide</strong></span>
+								<br>
+								<div id="tvguide_mob"></div>
 							</div>
 						</td>
 					</tr>

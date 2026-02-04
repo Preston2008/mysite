@@ -13,6 +13,10 @@ $(document).ready(function() {
 		return `${hrs}h ${mins}m`;
 	}
 
+	var today_dt = new Date();
+	var today_dt_str = today_dt.getMonth() + "/" + today_dt.getDate() + "/" + today_dt.getFullYear();
+	$("#today").text(today_dt_str);
+
 	//Traffic API Call
 	$.ajax({
 		type: "GET",
@@ -20,14 +24,19 @@ $(document).ready(function() {
 		url: "https://api.tomtom.com/traffic/services/4/flowSegmentData/relative0/10/json?point=33.3943%2C-104.5227&unit=MPH&openLr=false&key=Ce3585C6UjIzMcJAOFXRIp3DXcJ4BCf7",
 		success: function(response) {
 			$("#speed").text(response.flowSegmentData.currentSpeed);
+			$("#speed_mob").text(response.flowSegmentData.currentSpeed);
+
 			var travelTime = Number(response.flowSegmentData.currentTravelTime);
 			$("#travel").text(minutestohours(travelTime));
+			$("#travel_mob").text(minutestohours(travelTime));
+
 			var roadClosure = response.flowSegmentData.roadClosure;
 			var roadClosureTxt = "No";
 			if (roadClosure) {
 				roadClosureTxt = "Yes";
 			}
 			$("#closure").text(roadClosureTxt);
+			$("#closure_mob").text(roadClosureTxt);
 		}
 	});
 	
@@ -41,17 +50,21 @@ $(document).ready(function() {
 				$(this).find("current").each(function() {
 					var temp = $(this).find("temp_f").text();
 					$("#temp").text(temp);
+					$("#temp_mob").text(temp);
 					
 					var condition = $(this).find("condition").each(function() {
 						var weather = $(this).find("text").text();
 						$("#weather").text(weather);
+						$("#weather_mob").text(weather);
 					})
 
 					var wind = $(this).find("wind_mph").text();
 					$("#wind").text(wind);
+					$("#wind_mob").text(wind);
 					
 					var humidity = $(this).find("humidity").text();
 					$("#humidity").text(humidity);
+					$("#humidity_mob").text(humidity);
 				});
 			});
 		}
@@ -109,6 +122,7 @@ $(document).ready(function() {
 
 			});
 			$("#tvguide").html(html);
+			$("#tvguide_mob").html(html);
 		}
 	});
 });

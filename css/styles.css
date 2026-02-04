@@ -465,12 +465,14 @@ video {
 	width: 80%;
   }
 
-.officehistory {
+  .officehistory {
 	padding-left: 0px; 
 	padding-right: 0px;
-}
+  }
 
-}
+  table#siteUpdates.mobile td {
+		width: 100%;
+  }  
 
 @media (orientation: landscape) {
   #footer, #footer-blog {
