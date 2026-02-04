@@ -67,6 +67,7 @@ $(document).ready(function() {
 	
 	//TV Guide API Call
 	var date = new Date();
+	var hour = date.getHours();
 	var formattedDate = date.toISOString().slice(0, 10);
 	$.ajax({
 		type: "GET",
@@ -78,7 +79,7 @@ $(document).ready(function() {
 			var start_index = 0;
 			for (var idx=0;idx<response.length;idx++) {		
 				var airtime = response[idx].airtime.slice(0, 2);
-				if (airtime == "20") {
+				if (airtime == hour) {
 					if (start_index == 0) {
 						start_index = idx;
 						break;
@@ -86,14 +87,18 @@ $(document).ready(function() {
 				}
 			}
 
-			var idxArray = getRandomNumbers(5, start_index, start_index+10);
+			var idxArray = getRandomNumbers(5, start_index, start_index+20);
+			idxArray.sort(function(a, b){return a-b});
 			$.each(idxArray, function(index, value) {
 				var airtime = response[value].airtime.slice(0, 2);
-				if (airtime == "20")
-					airtime = "8"
+				var ampm = "am";
 				var realAirtime = Number(airtime);
+				if (realAirtime > 12) {
+					ampm = "pm";
+					realAirtime = realAirtime - 12;
+				}
 				var airtimeCentral = realAirtime - 1;
-				html = html + "<br><strong>"+ response[value].show.network.name + "</strong> " + response[value].show.name + " " + realAirtime.toString() + "/" + airtimeCentral.toString() + "c<br>";
+				html = html + "<br><strong>"+ response[value].show.network.name + "</strong> " + response[value].show.name + " " + realAirtime.toString() + ampm + "/" + airtimeCentral.toString() + "c<br>";
 
 			});
 			$("#tvguide").html(html);

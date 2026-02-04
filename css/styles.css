@@ -33,6 +33,7 @@ table#statusBar th {
 	border-style: outset; 
 	border-width: 2px; 
 	border-color: grey; 
+	position: relative;
 }
 
 table#siteUpdates {
@@ -73,8 +74,19 @@ table#siteUpdates td {
 	padding-top: 75px;
 }
 
+#latestUpdates {
+	color: red; 
+	padding-left: 5px;
+}
+
 .latest-updates-title {
 	color: red;
+}
+
+#today {
+	position: absolute;
+	right: 5px;
+	top:0;
 }
 
 /*Footer*/

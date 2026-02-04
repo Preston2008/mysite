@@ -31,52 +31,10 @@
 		</audio>
 		<div class="main-content" id="welcomePage">
 			<marquee behavior="scroll" direction="left" scrollamount="10">Welcome to my website, designed entirely by me using the latest tools available, ensuring that it never becomes obsolete. Currently under construction, check back later!</marquee>
-			<style>
-			    table#statusBar {
-					border-spacing: 5px;
-					width: 100%;
-				}
-				
-				table#statusBar th {
-					border-style: outset; 
-					border-width: 2px; 
-					border-color: grey; 
-				}
-				
-				table#siteUpdates {
-					width: 100%;
-					border-spacing: 5px;
-					margin-top: -5px;
-				}
-				
-				tr {
-					margin-top: 5px;
-					background-color: #d4d0dc; 
-				}
-				
-				th {
-					color: #000;
-					font-style: italic;
-					width: 210px;
-				}
-				
-				table#siteUpdates td {
-					color: black;
-					padding: 5px;
-					width: 210px;
-					border-style: outset; 
-					border-width: 2px; 
-					border-color: grey; 
-					vertical-align: top;
-				}
-				
-			</style>
 			<div id="index">
 				<table id="statusBar">
 					<tr>
-						<th id="latestUpdates" style="color: red; padding-left: 5px;">Latest Updates</th>
-						<!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-						<th style="text-align: right !important; padding-right: 5px;">February 3rd, 2026</th>-->
+						<th><span id="latestUpdates">Latest Updates</span><div id="today">Feb. 4th, 2026</div></th>
 					</tr>
 				</table>
 				<table id="siteUpdates">
@@ -103,7 +61,7 @@
 								Wind: <span id="wind"></span>mph</br>
 								Humidity: <span id="humidity"></span>%</p>
 								<br>
-								<strong>Traffic</strong>
+								<span class="latest-updates-title"><strong>Traffic</strong></span>
 								<p><strong>US285</strong></br> 
 								Current speed: <span id="speed"></span>mph<br>
 								Travel time: <span id="travel"></span><br>
