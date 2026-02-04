@@ -56,6 +56,14 @@ $(document).ready(function() {
 			});
 		}
 	});
+
+	function getRandomNumbers(count, min, max) {
+		let numbers = [];
+		for (let i = 0; i < count; i++) {
+			numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
+		}
+		return numbers;
+	}
 	
 	//TV Guide API Call
 	var date = new Date();
@@ -67,21 +75,27 @@ $(document).ready(function() {
 		success: function(response) {
 			var html = "";
 			var cnt = 0;
+			var start_index = 0;
 			for (var idx=0;idx<response.length;idx++) {		
 				var airtime = response[idx].airtime.slice(0, 2);
-				//if ("ABC".indexOf(response[idx].show.network.name) > -1) {
-				//	alert(response[idx].show.network.name);
-				//}
 				if (airtime == "20") {
-					cnt++;
-					airtime = "8";
-					var realAirtime = Number(airtime);
-					var airtimeCentral = realAirtime - 1;
-					html = html + "<br><strong>"+ response[idx].show.network.name + "</strong> " + response[idx].show.name + " " + realAirtime.toString() + "/" + airtimeCentral.toString() + "c<br>";
+					if (start_index == 0) {
+						start_index = idx;
+						break;
+					}
 				}
-				if (cnt == 5)
-					break;
 			}
+
+			var idxArray = getRandomNumbers(5, start_index, start_index+10);
+			$.each(idxArray, function(index, value) {
+				var airtime = response[value].airtime.slice(0, 2);
+				if (airtime == "20")
+					airtime = "8"
+				var realAirtime = Number(airtime);
+				var airtimeCentral = realAirtime - 1;
+				html = html + "<br><strong>"+ response[value].show.network.name + "</strong> " + response[value].show.name + " " + realAirtime.toString() + "/" + airtimeCentral.toString() + "c<br>";
+
+			});
 			$("#tvguide").html(html);
 		}
 	});
