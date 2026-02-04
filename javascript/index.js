@@ -90,6 +90,13 @@ $(document).ready(function() {
 			var idxArray = getRandomNumbers(5, start_index, start_index+20);
 			idxArray.sort(function(a, b){return a-b});
 			$.each(idxArray, function(index, value) {
+				var network = "";
+				if (response[value].show.network != null) {
+					network = response[value].show.network.name;
+				} else {
+					network = "Streaming";
+				}
+
 				var airtime = response[value].airtime.slice(0, 2);
 				var ampm = "am";
 				var realAirtime = Number(airtime);
@@ -98,7 +105,7 @@ $(document).ready(function() {
 					realAirtime = realAirtime - 12;
 				}
 				var airtimeCentral = realAirtime - 1;
-				html = html + "<br><strong>"+ response[value].show.network.name + "</strong> " + response[value].show.name + " " + realAirtime.toString() + ampm + "/" + airtimeCentral.toString() + "c<br>";
+				html = html + "<br><strong>"+ network + "</strong> " + response[value].show.name + " " + realAirtime.toString() + ampm + "/" + airtimeCentral.toString() + "c<br>";
 
 			});
 			$("#tvguide").html(html);
