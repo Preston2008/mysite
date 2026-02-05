@@ -24,12 +24,14 @@ body h1, #menu, #footer, #footer-blog, .main-content {
 }
 
 /*Homepage*/
-table#statusBar {
+table#statusBar,
+table#webRing {
 	border-spacing: 5px;
 	width: 100%;
 }
 
-table#statusBar th {
+table#statusBar th,
+table#webRing th {
 	border-style: outset; 
 	border-width: 2px; 
 	border-color: grey; 
@@ -83,10 +85,20 @@ table#siteUpdates td {
 	color: red;
 }
 
-#today {
+#today, .right {
 	position: absolute;
 	right: 5px;
 	top:0;
+}
+
+.left {
+	position: absolute;
+	left: 5px;
+	top:0;
+}
+
+.center {
+	text-align: center;
 }
 
 /*Footer*/
