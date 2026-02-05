@@ -44,7 +44,9 @@ table#siteUpdates {
 	margin-top: -5px;
 }
 
-tr {
+table#statusBar tr,
+table#siteUpdates tr,
+table#webRing tr {
 	margin-top: 5px;
 	background-color: #d4d0dc; 
 }
@@ -197,7 +199,7 @@ img#contact {
 	padding-top: 50px;
 }
 
-#menu a:visited, #blog a:visited, #officecamlink, #funny a:visited, #siteUpdates a:visited {
+#menu a:visited, #blog a:visited, #officecamlink, #funny a:visited, #siteUpdates a:visited, #webRing a:visited {
 	color: blue;
 }
 
