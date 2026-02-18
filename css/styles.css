@@ -360,7 +360,8 @@ video {
 
 #menu.haunted a {
 	color: green;
-}
+}\
+
 
 #side-menu.haunted ul li {
 	margin-bottom: 10px;
@@ -377,6 +378,16 @@ video {
 	top: 300px;
 }
 
+.story > p,
+.story ul,
+.story h4  {
+	text-align: left;
+}
+
+.story h4 {
+	text-decoration: underline;
+}
+
 /*My Office*/
 .officehistory {
 	padding-left: 125px; 
@@ -385,7 +396,17 @@ video {
 
 .mobile {
 	display: none;
- } 
+ }
+ 
+/*Enter Page*/
+#enter h1 {
+	font-family: Verdana, Arial, Helvetica;
+	font-style: italic;
+} 
+ 
+#enter-page marquee {
+ 	color: purple;
+}
 
  /*Cellular Compatibility*/
 @media screen and (min-resolution: 192dpi) { 
