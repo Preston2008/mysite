@@ -19,22 +19,30 @@
 			button { background: black; color: #00ffaa; border-radius: 5px; font-weight: 900; font-family: Courier;}
 			button img { border: 0px !important; margin-top: 3px;}
 			#still { display: none; }
+			@media screen and (min-resolution: 192dpi) { 
+				#factsheet { display: inline-block; width: 65%; vertical-align: top;}
+				#title, textarea { width: 100#;}
+				#animated, #still { width: 100%; }
+				#footer, #footer2, #footer3 { width: 100%; }
+			}
 		</style>
 	</head>
 	<body>
 		<div id="side_bar">
 			<a href="../index.html"><img src="./img/chemplant_logo2.JPG" width="200px"/></a>
-			<div id="title">
-				<span>COMPOUND GC-161</span>
-			</div>
-			<textarea rows="20">Creator: Charles Furnell
+			<div id="factsheet">
+				<div id="title">
+					<span>COMPOUND GC-161</span>
+				</div>
+				<textarea rows="20">Creator: Charles Furnell
 			Date Created: 1978
 			Class 4 Compound 
-			</textarea>
-			<div>
-				<button id="play"><img src="./img/play.png"/></button>
-				<button id="pause"><img src="./img/pause.png"/></button>
-				<button id="stop"><img src="./img/stop.png"/></button>
+				</textarea>
+				<div>
+					<button id="play"><img src="./img/play.png"/></button>
+					<button id="pause"><img src="./img/pause.png"/></button>
+					<button id="stop"><img src="./img/stop.png"/></button>
+				</div>
 			</div>
 		</div>
 		<div id="main_content">
