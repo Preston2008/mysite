@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<style>
-			html { background: grey; }
+			html { background: grey; width: 100%; }
+			#container { padding: 10px; background: #505050; border-radius: 5px; width: 700px; }
 			#side_bar { display: inline-block; width 30%; vertical-align: top; }
 			#main_content { height: 490px; padding-bottom: 4px; display: inline-block; width 70%; vertical-align: top; }
-			#title { text-align: center; width: 200px; background: black; color: #00ffaa; border-style: outset; border-width: 2px; border-color: grey; font-family: Courier; font-weight: 900; border-radius: 5px; }
-			#side_bar img { border-style: outset; border-width: 2px; border-color: grey; border-radius: 5px; }
-			#main_content img { border-style: outset; border-width: 2px; border-color: grey; border-radius: 5px; }
-			textarea { padding-top: 5px; padding-left: 5px; line-height: 0.7; font-size: 12px; color: #00ffaa; font-family: Courier; background: black; width: 194px; border-radius: 5px; border-color: grey; border-style: outset; border-width: 2px; }
-			#footer { height: 25px; width: 695px; background: #505050; border-style: outset; border-width: 2px; border-radius: 5px;}
-			#footer2 { text-align: center; height: 25px; width: 695px; background: black; border-style: outset; border-width: 2px; border-radius: 5px;}
-			#footer2 span { font-weight: 900; font-family: Courier; color: #00ffaa; }
-			#footer3 { height: 25px; width: 695px; background: #505050; border-style: outset; border-width: 2px; border-radius: 5px;}			
+			#title { text-align: center; width: 200px; background: black; color: #00ffaa; border-style: inset; border-width: 2px; border-color: grey; font-family: Courier; font-weight: 900; border-radius: 5px; }
+			#side_bar img { border-style: inset; border-width: 2px; border-color: grey; border-radius: 5px; }
+			#main_content img { border-style: inset; border-width: 2px; border-color: grey; border-radius: 5px; }
+			textarea { margin-top: 7px; padding-top: 5px; padding-left: 5px; line-height: 0.7; font-size: 12px; color: #00ffaa; font-family: Courier; background: black; width: 195px; border-radius: 5px; }
+			#footer { text-align: center; height: 25px; width: 695px; background: black; border-style: inset; border-width: 2px; border-radius: 5px;}
+			#footer span { font-weight: 900; font-family: Courier; color: #00ffaa; }
 			button { background: black; color: #00ffaa; border-radius: 5px; font-weight: 900; font-family: Courier;}
 			button img { border: 0px !important; margin-top: 3px;}
 			#still { display: none; }
+			#controls { margin-top: 5px;}
 			#mobile { display: none; }
+			
 			@media only screen and (max-width: 440px) { 
 				#mobile { display: block; }
 				#desktop { display: none; }
@@ -35,62 +36,32 @@
 		</style>
 	</head>
 	<body>
-	<div id="desktop">
-		<div id="side_bar">
-			<a href="../index.html"><img id="logo" src="./img/chemplant_logo2.JPG" width="200px"/></a>
-			<div id="factsheet">
-				<div id="title">
-					<span>COMPOUND GC-161</span>
+		<div id="container">
+			<div id="desktop">
+				<div id="side_bar">
+					<img src="./img/chemplant_logo2.JPG" width="200px"/>
+					<div id="title">
+						<span>COMPOUND GC-161</span>
+					</div>
+					<textarea rows="20">Creator: Charles Furnell
+					Date Created: 1978
+					Class 4 Compound 
+					</textarea>
+					<div id="controls">
+						<button id="play"><img src="./img/play.png"/></button>
+						<button id="pause"><img src="./img/pause.png"/></button>
+						<button id="stop"><img src="./img/stop.png"/></button>
+					</div>
 				</div>
-				<textarea rows="20">Creator: Charles Furnell
-			Date Created: 1978
-			Class 4 Compound 
-				</textarea>
-				<div>
-					<button id="play"><img src="./img/play.png"/></button>
-					<button id="pause"><img src="./img/pause.png"/></button>
-					<button id="stop"><img src="./img/stop.png"/></button>
+				<div id="main_content">
+					<img id="animated" src="./img/gc161_144.GIF" width="480px"/>
+					<img id="still" src="./img/gc161_still.JPG" width="480px"/>
 				</div>
-			</div>
-		</div>
-		<div id="main_content">
-			<img id="animated" src="./img/gc161_144.GIF" width="480px"/>
-			<img id="still" src="./img/gc161_still.JPG" width="480px"/>
-		</div>
-		<div id="footer">
-		</div>
-		<div id="footer2">
-			<span>Paradise Valley Chemical Plant</span>
-		</div>
-		<div id="footer3">
-		</div>
-	</div>
-		<div id="mobile">
-		<div id="side_bar">
-			<div id="chemName">
-				<a href="../index.html"><img id="logo" src="./img/chemplant_logo2.JPG"/></a>
-				<div id="title">
-					<textarea rows="20">COMPOUND GC-161
-						
-Creator: Charles Furnell
-Date Created: 1978
-Class 4 Compound</textarea>
+				<div id="footer">
+					<span>Paradise Valley Chemical Plant</span>
 				</div>
 			</div>
-
 		</div>
-		<div id="main_content">
-			<img id="animated" src="./img/gc161_144.GIF"/>
-			<img id="still" src="./img/gc161_still.JPG"/>
-		</div>
-		<div id="footer">
-		</div>
-		<div id="footer2">
-			<span>Paradise Valley Chemical Plant</span>
-		</div>
-		<div id="footer3">
-		</div>
-	</div>
 	</body>
 	
 	<script>
@@ -116,19 +87,6 @@ Class 4 Compound</textarea>
 		
 		let play = document.getElementById("play");
 		play.addEventListener("click", playFn);
-		
-		let pause2 = document.getElementById("pause2");
-		pause2.addEventListener("click", pauseFn);
-		
-		let stop2 = document.getElementById("stop2");
-		stop2.addEventListener("click", pauseFn);
-		
-		let play2 = document.getElementById("play2");
-		play2.addEventListener("click", playFn);
 	</script>
 </html>
-
-
-
-
 
