@@ -409,7 +409,7 @@ video {
 }
 
  /*Cellular Compatibility*/
-@media screen and (min-resolution: 192dpi) { 
+@media only screen and (max-width: 430px) { 
   #footer {
 	position: fixed !important;
   }
@@ -517,6 +517,7 @@ video {
 	position: relative !important;
   }
 }
+
 
 
 
