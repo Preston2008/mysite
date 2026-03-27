@@ -159,7 +159,7 @@ marquee {
 }
 
 /*Blog Page*/
-#blog ul li {
+#blog ul#bloglist > li {
 	list-style-type: circle;
 	border-bottom: 3px groove;
 	margin-right: 50px;
