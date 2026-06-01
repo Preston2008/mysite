@@ -158,6 +158,11 @@ marquee {
 	padding-top: 50px;
 }
 
+.main-content#aboutme.business {
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
 /*Blog Page*/
 #blog ul#bloglist > li {
 	list-style-type: circle;
