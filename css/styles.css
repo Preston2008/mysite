@@ -172,7 +172,8 @@ marquee {
 
 #blog ul li img,
 #myoffice p img,
-#aboutme img {
+#aboutme img,
+#ufo img {
 	width: 350px;
 }
 
@@ -306,6 +307,24 @@ img#contact {
 #funny #pager ul {
 	margin: 0;
 	padding: 0;
+}
+
+/*UFO Analog Stay*/
+.ufo#menu a:visited, .ufo#menu a , h1.ufo {
+	color: green;
+}
+
+#footer.ufo {
+	color: green;
+}
+
+.ufo#footer {
+	padding-top: 400px !important;
+}
+
+.main-content#ufo {
+	padding-top: 25px;
+	color: green;
 }
 
 /*Side Menu & iFrame*/
