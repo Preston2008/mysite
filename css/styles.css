@@ -444,7 +444,7 @@ video {
 	position: fixed !important;
   }
 
-  #footer.faq, #footer.goodies, #footer.aboutme, #footer.home {
+  #footer.faq, #footer.goodies, #footer.aboutme, #footer.home, #footer.ufo {
 	position: relative !important;
 	padding-top: 100px;
   }
