@@ -333,6 +333,11 @@ img#contact {
 	padding-top: 0;
 }
 
+.main-content#ufo #comingSoon {
+	border-style: groove;
+	border-color: grey;
+}
+
 /*Side Menu & iFrame*/
 iframe {
 	width: 100%;
