@@ -311,11 +311,11 @@ img#contact {
 
 /*UFO Analog Stay*/
 .ufo#menu a:visited, .ufo#menu a , h1.ufo {
-	color: lawngreen;
+	color: #00ff00;
 }
 
 #footer.ufo {
-	color: lawngreen;
+	color: #00ff00;
 }
 
 .ufo#footer {
@@ -324,7 +324,7 @@ img#contact {
 
 .main-content#ufo {
 	padding-top: 25px !important;
-	color: lawngreen;
+	color: #00ff00;
 }
 
 .main-content#ufo p:first-child,
