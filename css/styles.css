@@ -327,6 +327,12 @@ img#contact {
 	color: green;
 }
 
+.main-content#ufo p:first-child,
+.main-content#ufo ul
+.main-content#ufo .inner-content {
+	padding-top: 0;
+}
+
 /*Side Menu & iFrame*/
 iframe {
 	width: 100%;
