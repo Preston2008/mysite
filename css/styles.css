@@ -323,7 +323,7 @@ img#contact {
 }
 
 .main-content#ufo {
-	padding-top: 25px;
+	padding-top: 25px !important;
 	color: green;
 }
 
