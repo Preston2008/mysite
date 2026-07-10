@@ -327,6 +327,10 @@ img#contact {
 	color: #00ff00;
 }
 
+.main-content#ufo a, .main-content#ufo a:visited {
+	color: blue;
+}
+
 .main-content#ufo p:first-child,
 .main-content#ufo ul
 .main-content#ufo .inner-content {
