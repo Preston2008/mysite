@@ -342,6 +342,10 @@ img#contact {
 	border-color: grey;
 }
 
+#ufo .divider {
+  	width: 800px;
+  }  
+
 /*Side Menu & iFrame*/
 iframe {
 	width: 100%;
@@ -549,6 +553,10 @@ video {
 
   table#siteUpdates.mobile td {
 		width: 100%;
+  }
+  
+  #ufo .divider {
+  	width: 100%;
   }  
 
 @media (orientation: landscape) {
