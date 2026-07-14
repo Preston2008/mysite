@@ -309,7 +309,7 @@ img#contact {
 	padding: 0;
 }
 
-/*UFO Analog Stay*/
+/*UFO Alien Stay*/
 .ufo#menu a:visited, .ufo#menu a , h1.ufo {
 	color: #00ff00;
 }
@@ -323,7 +323,7 @@ img#contact {
 }
 
 .main-content#ufo {
-	padding-top: 25px !important;
+	padding-top: 0px !important;
 	color: #00ff00;
 }
 
