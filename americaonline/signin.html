@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./css/welcome_signin.css">
+		<title>Internet</title>
+	</head>
+	<body>
+
+	<audio controls id="midiPlayer1">
+	  <source src="midi/dial-up-modem-02.wav" type="audio/mpeg">
+	</audio>	
+	<audio controls id="midiPlayer2">
+	  <source src="midi/welcome.wav" type="audio/mpeg">
+	</audio>
+	
+	<div class="main-content">
+		<img id="aol1" src="images/aol_1.JPG" />
+		<img id="aol2" src="images/aol_2.JPG" />
+		<img id="aol3" src="images/aol_3.JPG" />
+	</div>
+
+	</body>
+</html>
+
+<script>
+	let midiPlayer1 = document.getElementById("midiPlayer1");
+	midiPlayer1.autoplay = true;
+
+	let midiPlayer2 = document.getElementById("midiPlayer2");
+	const aol1 = document.getElementById("aol1");
+	const aol2 = document.getElementById("aol2");
+	const aol3 = document.getElementById("aol3");
+
+	setTimeout(function() {
+	  midiPlayer2.play();
+	}, 16000);
+	
+	setTimeout(function() {
+	  aol1.style.display = "none";
+	  aol2.style.display = "inline-block";
+	}, 7000);
+	
+	setTimeout(function() {
+	  aol2.style.display = "none";
+	  aol3.style.display = "inline-block";
+	}, 14000);
+	
+	setTimeout(function() {
+	  window.open("welcome.html", "_self");
+	}, 18000);
+</script>

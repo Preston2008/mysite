@@ -1,0 +1,26 @@
+html {
+	background: gray;
+}
+
+body {
+	color: white;
+	margin: 0;
+}
+
+.main-content, .main-content img {
+	text-align: center;
+}
+
+.main-content {
+	padding-top: 175px;
+}
+
+#midiPlayer1,
+#midiPlayer2,
+#aol2, #aol3 {
+	display: none;
+}
+
+#aol1, #aol2, #aol3 {
+	width: 40%;
+}
