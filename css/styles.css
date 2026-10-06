@@ -226,11 +226,16 @@ img#contact {
 	color: aqua;
 }
 
+.odyssey#menu a:visited, .faq#menu a, .faq#footer, #links a, #links a:visited {
+	color: red;
+}
+
 .faq#footer {
 	padding-top: 100px;
 }
 
-.main-content#faq {
+.main-content#faq,
+.main-content#odyssey {
 	padding-top: 25px;
 }
 
@@ -248,6 +253,28 @@ img#contact {
 .subtext {
 	font-size: small;
 	font-style: italic;
+}
+
+#odyssey .inner-content {
+	padding-left: 50px
+}
+
+#odyssey table td {
+	vertical-align: top;
+}
+
+#odyssey table td p {
+	margin: 0;
+}
+
+#odyssey #tbl_1 p,
+#odyssey #tbl_3 p  {
+	padding-left: 20px;
+}
+
+#odyssey #tbl_2 p,
+#odyssey #tbl_4 p {
+	padding-right: 20px;
 }
 
 /*Sitemap*/

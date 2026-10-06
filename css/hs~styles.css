@@ -1,0 +1,599 @@
+@font-face {
+  font-family: ComicSansMS; /* set name */
+  src: url(./fonts/COMIC.TTF); /* url of the font */
+}
+
+html {
+	background: url('../images/background2.jpg');
+}
+
+body {
+	color: white;
+	margin: 0;
+}
+
+h1 {
+	font-family: ComicSansMS;
+}
+
+body h1, #menu, #footer, #footer-blog, .main-content {
+	text-align: center;
+}
+
+#menu ul li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin-right: 20px;
+}
+
+.main-content {
+	padding-top: 200px;
+	min-height: 800px;
+}
+
+/*Homepage*/
+table#statusBar,
+table#webRing {
+	border-spacing: 5px;
+	width: 100%;
+}
+
+table#statusBar th,
+table#webRing th {
+	border-style: outset; 
+	border-width: 2px; 
+	border-color: grey; 
+	position: relative;
+	font-family: Verdana, Arial, Helvetica;
+}
+
+table#siteUpdates {
+	width: 100%;
+	border-spacing: 5px;
+	margin-top: -5px;
+}
+
+table#statusBar tr,
+table#siteUpdates tr,
+table#webRing tr {
+	margin-top: 5px;
+	background-color: #d4d0dc; 
+}
+
+th {
+	color: #000;
+	font-style: italic;
+	width: 210px;
+}
+
+table#siteUpdates td {
+	color: black;
+	padding: 5px;
+	width: 210px;
+	border-style: outset; 
+	border-width: 2px; 
+	border-color: grey; 
+	vertical-align: top;
+}
+
+.main-content#welcomePage {
+	padding-top: 50px;
+}
+
+.main-content #index {
+	margin-right: 200px;
+	text-align: left;
+	margin-left: 200px;
+	padding-top: 75px;
+}
+
+#latestUpdates {
+	color: red; 
+	padding-left: 5px;
+}
+
+.latest-updates-title {
+	color: red;
+	font-family: Verdana, Arial, Helvetica;
+	font-style: italic;
+}
+
+#today, .right {
+	position: absolute;
+	right: 5px;
+	top:0;
+}
+
+.left {
+	position: absolute;
+	left: 5px;
+	top:0;
+}
+
+.center {
+	text-align: center;
+}
+
+/*Footer*/
+#footer, #footer-blog {
+	position: relative;
+    bottom: 0;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+#footer a, #footer-blog a {
+    display: block;
+    padding-bottom: 10px;
+}
+
+#footer a:hover, #footer-blog a:hover {
+	cursor: default;
+}
+
+marquee {
+    font-size: 20px;
+    color: red;
+    font-family: ComicSansMS;
+}
+
+#compatibility {
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+}
+
+/*About Me Page*/
+#aboutme ul li, #side-menu ul li, #links ul li, #faq ul li, #sitemap ul li {
+	list-style-type: disclosure-closed;
+}
+
+.aboutme#menu a:visited, .aboutme#menu a {
+	color: red;
+}
+
+.main-content#links, .main-content#sitemap, .main-content#goodies {
+	margin-right: 200px;
+	text-align: left;
+	margin-left: 200px;
+	padding-top: 150px;
+}
+
+.main-content#aboutme {
+	margin-right: 200px;
+	text-align: left;
+	margin-left: 200px;
+	padding-top: 50px;
+}
+
+.main-content#aboutme.business {
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+/*Blog Page*/
+#blog ul#bloglist > li {
+	list-style-type: circle;
+	border-bottom: 3px groove;
+	margin-right: 50px;
+}
+
+#blog ul li img,
+#myoffice p img,
+#aboutme img,
+#ufo img {
+	width: 350px;
+}
+
+img#contact {
+	width: 120px;
+}
+
+#aboutme p img {
+	display: inline-block;
+}
+
+#blog ul li:last-child,
+#blog #pager ul li {
+	border-bottom: 0;
+}
+
+#blog ul li:nth-child(n+5) {
+  /*display: none;*/
+}
+
+#blog #pager ul li,
+#funny #pager ul li {
+	list-style-type: none;
+	display: inline-block !important;
+	margin-right: 10px !important;
+	cursor: pointer;
+}
+
+.main-content#blog {
+	text-align: left;
+	margin: 0 100px;
+	padding-top: 50px;
+}
+
+#menu a:visited, #blog a:visited, #officecamlink, #funny a:visited, #siteUpdates a:visited, #webRing a:visited {
+	color: blue;
+}
+
+/*FAQ Page*/
+.faq#menu a:visited, .faq#menu a, .faq#footer, #links a, #links a:visited {
+	color: aqua;
+}
+
+.odyssey#menu a:visited, .faq#menu a, .faq#footer, #links a, #links a:visited {
+	color: red;
+}
+
+.faq#footer {
+	padding-top: 100px;
+}
+
+.main-content#faq,
+.main-content#odyssey {
+	padding-top: 25px;
+}
+
+.main-content#faq a:visited,
+.main-content#faq a {
+	color: aqua !important;
+}
+
+.inner-content {
+	text-align: left;
+	padding-top: 25px;
+	padding-right: 80px;
+}
+
+.subtext {
+	font-size: small;
+	font-style: italic;
+}
+
+#odyssey .inner-content {
+	padding-left: 50px
+}
+
+#odyssey table td {
+	vertical-align: top;
+}
+
+#odyssey table td p {
+	margin: 0;
+	padding-left: 20px;
+}
+
+/*Sitemap*/
+.main-content#sitemap ul li a {
+	color: #fff;
+}
+
+#sitemap ul ul {
+	padding-left: 15px;
+}
+
+#sitemap ul ul ul li {
+	list-style-type: square;
+}
+
+/*Goodies*/
+.main-content#goodies tr td {
+	text-align: center;
+}
+
+.main-content#goodies img {
+	width: 250px;
+}
+
+.instr {
+	padding-left: 10px;
+}
+
+#goodies .badge135 {
+	width: 100px !important;
+	height: 35px !important;
+}
+
+#goodies .badge50 {
+	width: 50px !important;
+	height: 50px !important;
+}
+
+#goodies .badge240 {
+	width: 200px !important;
+	height: 40px !important;
+	border-width: thick;
+	border-style: groove;
+	border-color: grey;
+}
+
+/*Funny*/
+.main-content#funny {
+	padding-top: 100px !important;
+	margin: 0 50px;
+	padding-bottom: 200px;
+}
+
+.main-content#funny img {
+	width: 80%;
+}
+
+.main-content#funny.archive img {
+	width: 480px;
+}
+
+.main-content#funny img#quotePic {
+	width: 25%;
+}
+
+#funny #pager ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*UFO Alien Stay*/
+.ufo#menu a:visited, .ufo#menu a , h1.ufo {
+	color: #00ff00;
+}
+
+#footer.ufo {
+	color: #00ff00;
+}
+
+.ufo#footer {
+	padding-top: 400px !important;
+}
+
+.main-content#ufo {
+	padding-top: 0px !important;
+	color: #00ff00;
+}
+
+.main-content#ufo a, .main-content#ufo a:visited {
+	color: blue;
+}
+
+.main-content#ufo p:first-child,
+.main-content#ufo ul
+.main-content#ufo .inner-content {
+	padding-top: 0;
+}
+
+.main-content#ufo #comingSoon {
+	border-style: groove;
+	border-color: grey;
+}
+
+#ufo .divider {
+  	width: 800px;
+  }  
+
+/*Side Menu & iFrame*/
+iframe {
+	width: 100%;
+	border-width: thick;
+	border-style: groove;
+}
+
+iframe#menu {
+	position: fixed;
+	width: 125px;
+	height: 100%;
+	left: 0;
+}
+
+#side-menu ul li a:visited, #side-menu ul li a {
+	color: white !important;
+}
+
+#side-menu ul li {
+	margin-bottom: 5px;
+}
+
+.ps {
+	text-align: right;
+    margin-right: 35px;
+}
+
+#midiPlayer {
+	display: none;
+}
+
+video {
+	display: block;
+    margin: 0 auto;
+	border: 4px groove;
+}
+
+/*Gallery*/
+#galleryLinks {
+	display: inline-block;
+    list-style-type: disclosure-closed;
+    text-align: left;
+    padding-bottom: 75px;
+}
+
+/*Links Page*/
+#links {
+	text-align: left;
+}
+
+/*Haunted Stories Page*/
+.story {
+	display: none;
+}
+
+#menu.haunted a {
+	color: green;
+}\
+
+
+#side-menu.haunted ul li {
+	margin-bottom: 10px;
+}
+
+#side-menu.haunted ul li a:hover,
+#side-menu.haunted ul li a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#menu-image {
+	position: absolute;
+	top: 300px;
+}
+
+.story > p,
+.story ul,
+.story h4  {
+	text-align: left;
+}
+
+.story h4 {
+	text-decoration: underline;
+}
+
+/*My Office*/
+.officehistory {
+	padding-left: 125px; 
+	padding-right: 125px;
+}
+
+.mobile {
+	display: none;
+ }
+ 
+/*Enter Page*/
+#enter h1 {
+	font-family: Verdana, Arial, Helvetica;
+	font-style: italic;
+} 
+ 
+#enter-page marquee {
+ 	color: purple;
+}
+
+ /*Cellular Compatibility*/
+@media only screen and (max-width: 440px) { 
+  #footer {
+	position: fixed !important;
+  }
+
+  #footer.faq, #footer.goodies, #footer.aboutme, #footer.home, #footer.ufo {
+	position: relative !important;
+	padding-top: 100px;
+  }
+  
+  .main-content#links, .main-content#sitemap {
+	margin-left: 50px !important;
+	margin-right: 0 !important;
+  }
+  
+  .ps {
+	text-align: left !important;
+  }
+  
+  .main-content, .main-content#links, .main-content#sitemap {
+    padding-top: 100px !important;
+  }
+
+  .main-content#goodies, .main-content#gallery, .main-content#blog {
+	padding-top: 50px !important;
+  }
+  
+  .main-content#aboutme {
+	margin: 0 25px !important;
+	padding-top: 34px !important;;
+  }
+
+  .main-content#blog ul li img,
+  .main-content#myoffice p img {
+	/*width: 75% !important;*/
+  }
+  
+  .main-content#guestbook {
+    padding-top: 0 !important;
+  }
+  
+  .main-content#blog,
+  .main-content#faq, 
+  .main-content#goodies,
+  #index {
+	margin: 0 10px !important;
+	margin-bottom: 100px;
+  }
+
+  .main-content#faq {
+	padding-top: 10px !important;
+	margin: 0 10px !important;
+  }
+
+  .inner-content {
+	padding-right: 35px;
+  }
+  
+  #blog ul li {
+	margin-right: 40px !important;
+  }
+  
+  #footer-blog {
+	padding-top: 100px !important;
+  }
+  
+  .desktop {
+	display: none;
+  }
+  
+  .mobile {
+	display: block;
+  }
+  
+  iframe#header {
+	width: 108%;
+  }
+  
+  .mobile img {
+	width: -webkit-fill-available;
+  }
+
+  .instr {
+	padding-left: 0;
+  }
+
+  .main-content#funny img#quotePic {
+	width: 75%;
+  }
+  
+  .main-content#funny.archive img {
+	width: 80%;
+  }
+
+  .officehistory {
+	padding-left: 0px; 
+	padding-right: 0px;
+  }
+
+  table#siteUpdates.mobile td {
+		width: 100%;
+  }
+  
+  #ufo .divider {
+  	width: 100%;
+  }  
+
+@media (orientation: landscape) {
+  #footer, #footer-blog {
+	position: relative !important;
+  }
+}
+
+
+
+
+
+
