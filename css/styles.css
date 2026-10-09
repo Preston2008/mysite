@@ -259,6 +259,10 @@ img#contact {
 	padding-left: 50px
 }
 
+ul {
+  list-style-type: disclosure-closed;
+}
+
 #odyssey table td {
 	vertical-align: top;
 }
