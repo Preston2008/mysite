@@ -510,6 +510,10 @@ video {
   .main-content, .main-content#links, .main-content#sitemap {
     padding-top: 100px !important;
   }
+  
+  .main-content#odyssey {
+	padding-top: 0px !important;
+}
 
   .main-content#goodies, .main-content#gallery, .main-content#blog {
 	padding-top: 50px !important;
@@ -544,6 +548,16 @@ video {
 
   .inner-content {
 	padding-right: 35px;
+  }
+  
+  #odyssey .inner-content {
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+  }
+  
+  #odyssey .inner-content ul {
+  	padding-left: 25px !important;
+  	list-style-type: disclosure-closed;
   }
   
   #blog ul li {
