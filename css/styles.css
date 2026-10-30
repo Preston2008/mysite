@@ -157,7 +157,7 @@ marquee {
 	margin-right: 200px;
 	text-align: left;
 	margin-left: 200px;
-	padding-top: 150px;
+	padding-top: 50px;
 }
 
 .main-content#aboutme {
@@ -512,7 +512,7 @@ video {
   }
   
   .main-content, .main-content#links, .main-content#sitemap {
-    padding-top: 100px !important;
+    padding-top: 50px !important;
   }
   
   .main-content#odyssey {
