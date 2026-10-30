@@ -226,7 +226,7 @@ img#contact {
 	color: aqua;
 }
 
-.odyssey#menu a:visited, .faq#menu a, .faq#footer, #links a, #links a:visited {
+.odyssey#menu a:visited {
 	color: red;
 }
 
