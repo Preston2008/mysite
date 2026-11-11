@@ -206,6 +206,10 @@ img#contact {
 	border-bottom: 0;
 }
 
+#blog h4 {
+	font-family: Courier;
+}
+
 #blog ul li:nth-child(n+5) {
   /*display: none;*/
 }
