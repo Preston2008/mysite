@@ -237,7 +237,10 @@ img#contact {
 	color: aqua;
 }
 
-.odyssey#menu a:visited {
+.odyssey#menu a,
+.odyssey#menu a:visited,
+#odyssey .inner-content a,
+#odyssey .inner-content a:visited {
 	color: red;
 }
 
