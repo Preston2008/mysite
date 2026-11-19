@@ -248,6 +248,10 @@ img#contact {
 	padding-top: 100px;
 }
 
+.odyssey#footer {
+	color: red;
+}
+
 .main-content#faq,
 .main-content#odyssey {
 	padding-top: 25px;
